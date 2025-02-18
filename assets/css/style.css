@@ -1,7 +1,10 @@
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Atkinson Hyperlegible Next", serif;
 }
+
+
+
 
 /* Navbar */
 .navbar {
@@ -12,6 +15,8 @@ body {
     align-items: center;
     /* Center the content vertically */
     box-shadow: 0px 0px 10px ;
+    background-color: #fff;
+
 }
 
 .navbar-nav{
@@ -40,40 +45,74 @@ body {
 }
 
 .nav-link {
-    color: rgb(92, 92, 86);
+    color: rgb(24, 22, 22);
    text-align: center;
    font-weight: 100;
+   font-family: "Atkinson Hyperlegible Next", serif;
+
+
 }
 
 .btn{
     background-color: rgb(214, 125, 17);
-    border-radius: 20px;
+    border-radius: 10px;
+        border-color: #f07008;
+
 
 }
 
-/* Hero Section */
 .hero {
-    background: url('../img/bg.jpg') no-repeat center center/cover;
-    opacity:10px;
+    position: relative;
+    background: url('../img/bg.jpg') no-repeat center center; /* Background image */
     background-size: cover;
     height: 100vh;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adds text shadow for better contrast */
+}
+
+/* Overlay with reduced opacity on the background image */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 30% opacity */
+    z-index: 1; /* Places the overlay above the image but behind the content */
 }
 
 .hero .container {
-    max-width: 800px;
+    position: relative; /* Ensures content appears above the overlay */
+    z-index: 1; /* Keeps the content above the overlay */
+    text-align: center;
 }
 
 .btn-warning {
-    background-color: #ff6f00; /* Custom orange color */
-    border-color: #ff6f00;
+    background-color: #faf9f9; /* Custom orange color */
+    border-color: #f07008;
+    color:#f07008
 }
 
 .btn-outline-light {
     border-color: #fff;
     color: #fff;
 }
+
+.display-3{
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-weight: 450px;
+}
+.lead{
+    font-family: "Atkinson Hyperlegible Next", serif;
+
+}
+.mb-4{
+    font-size: 20px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+
+}
+
 
 /* Sections */
 .section {
@@ -86,6 +125,100 @@ body {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
+
+/* General Section Styling */
+#about .section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Mission Section Styling */
+.mission h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Values Section Styling */
+.values h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.values ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Team Section Styling */
+.team h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.team p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    max-width: 200px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
 
 /* Gallery */
 .imag {
