@@ -8,8 +8,20 @@ body {
     height: 80px;
     /* Set a fixed height for the navbar */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     /* Center the content vertically */
+    box-shadow: 0px 0px 10px ;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center; /* Centers nav links */
+    flex-grow: 1; /* Ensures nav links are in the center */
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .navbar-logo {
@@ -28,7 +40,13 @@ body {
 }
 
 .nav-link {
-    color: rgb(214, 125, 17);
+    color: rgb(10, 10, 9);
+   text-align: center;
+}
+
+.btn{
+    background-color: rgb(214, 125, 17);
+
 }
 
 /* Hero Section */
