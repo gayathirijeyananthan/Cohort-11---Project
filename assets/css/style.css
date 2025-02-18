@@ -40,21 +40,39 @@ body {
 }
 
 .nav-link {
-    color: rgb(10, 10, 9);
+    color: rgb(92, 92, 86);
    text-align: center;
+   font-weight: 100;
 }
 
 .btn{
     background-color: rgb(214, 125, 17);
+    border-radius: 20px;
 
 }
 
 /* Hero Section */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?restaurant,dining') no-repeat center center/cover;
-    height: 90vh;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    opacity:10px;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.btn-warning {
+    background-color: #ff6f00; /* Custom orange color */
+    border-color: #ff6f00;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
 }
 
 /* Sections */
